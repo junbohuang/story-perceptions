@@ -1,0 +1,59 @@
+user,instance_id,familiarity:::scale_2,familiarity:::scale_4,familiarity:::scale_3,familiarity:::scale_1,familiarity:::scale_5,story_decision:::YES,story_decision:::NO,confidence:::scale_2,confidence:::scale_4,confidence:::scale_3,confidence:::scale_1,confidence:::scale_5,goal:::text_box,story_decision_explanation:::text_box,story_alternative:::text_box,goal_codes,story_decision_explanation_codes,story_alternative_codes
+5f1201f1c1ac1410a8f39a21,cfl8x0q,2.0,,,,,,2.0,,,3.0,,,Explain why there are differences between how he lifts and his friend lifts,I didn't experience it as a story even though me mentioned something because it did not feel like explaining an experience to me,Explanation of bodybuilding/lifting,*2c 1a 1p,!1b !*2c !1m !2a,2c 1p
+5f1201f1c1ac1410a8f39a21,t3_icafx,,,,,5.0,,2.0,,4.0,,,,get advice on his plans for higher education,There was no story just a list of attributes and a lot of it was future looking which makes me feel like it was less of a story since it has not happened yet and may not happen at all,request for advice,1a *2b 1n 2e,!1b 2d !2a !1m 1h !1t,2e 2b
+5f1201f1c1ac1410a8f39a21,t3_3siaph,,4.0,,,,1.0,,,,,,5.0,share their happiness with me,There was an experience recounted in the past,,1i 1a 1s,*2a 1b 1t,
+5f1201f1c1ac1410a8f39a21,t3_3sszy3,,,,1.0,,1.0,,,4.0,,,,get advice about what he can do to fix his car,He recounts a specific experience he had and tells it from start to finish to inform his request,,1q 1a *2b 1s 2e,*2a 1c 1a 1b 2b,
+5f1201f1c1ac1410a8f39a21,t3_2oud1f,,,,1.0,,,2.0,,4.0,,,,explain why they enjoy a certain video game more than another,There is no story arc and it's just a list of statements that do not form a coherent story sequentially at all,the start of a debate surrounding two games,*2c 1a 2e 1o,!1j !2a !1c,2g 1r
+5f1201f1c1ac1410a8f39a21,t3_2xe764,,,,1.0,,1.0,,,,3.0,,,Explain the process of a game they played,They explained how events transpired and it had a defined start and end and happened in the past,,1q *2c 1a,1c 1t 1j *2c 1b,
+5f1201f1c1ac1410a8f39a21,t3_16c6pn,,,3.0,,,1.0,,,,,,5.0,Tell an embarrassing/uncomfortable story,He recounts an experience that happened in the past,,2a 1s,*2a 1b 1t,
+5f1201f1c1ac1410a8f39a21,cirf0m3,,,,1.0,,,2.0,,4.0,,,,rant about an experience playing airsoft (?),There was no arc to the story it was a list of random statements about his experience,complaint,1o 1b,1a !1j 2d !1c 2a 1b,1o
+5f1201f1c1ac1410a8f39a21,c2f06iz,2.0,,,,,1.0,,,,,,5.0,tell a story about a traumatic experience,"It was clearly a story, an anecdote he was telling from start to finish ",,2a 1n 1b 1s,2a 1j,
+5f1201f1c1ac1410a8f39a21,c2o9ms5,,,,1.0,,,2.0,2.0,,,,,explain their personal experience with acutane and how it affected their body,"It was not focused on the experience, mainly a list of thoughts",an explanation of a reaction to a medicine,*2c 1a 1n 1b,!1b,2c 1b 2j
+60fd694d2bf4aaa5745a6053,cfl8x0q,2.0,,,,,1.0,,,4.0,,,,explain rep max parameters based on body composition.,"It has a timeframe.
+It has characters/people.
+It flows.",,1q *2c,1a 1j 1t,
+60fd694d2bf4aaa5745a6053,t3_icafx,,,3.0,,,,2.0,2.0,,,,,get input on their degree options.,"It seems more like a list of reasons than any sort of journey.
+I can't truly make out a beginning, middle and end.
+They affirm they are simply seeking advice.  Blog posts asking things don't seem too much like stories to me usually.",advice request,1a 2e *2b,2c !1j *2b !2a !1c 2e !1m,2e 2b
+60fd694d2bf4aaa5745a6053,t3_3siaph,,,3.0,,,1.0,,,4.0,,,,explain their love of a song.,"It has a starting point.
+The sentences logically follow one another.
+The ending connects to the beginning.
+The past tense and sentence structure conveys time has occured/passed.",,1a 1s 2e 1o 2f *2c,1j 1c 1t,
+60fd694d2bf4aaa5745a6053,t3_3sszy3,2.0,,,,,1.0,,,4.0,,,,get advice on fixing their car.,"There is a beginning and middle--and the desire for a yet unfulfilled end.
+There is a ""character"" need and inciting incident as well as background.
+There are problems along the way, and a central problem.
+There are chatracters outside of them eg. the mechanics.",,1q 1a 2e *2b,1d 1a 1c 1b,
+60fd694d2bf4aaa5745a6053,t3_2oud1f,,,3.0,,,1.0,,,,,1.0,,complain about a game change,"A lot of it is disjointed but... they are talking about something that happened.  They are responding to it.
+There is an instigating incident.",,*2e 1o 1b 2f,*2d !1j 1d *2g 1b,
+60fd694d2bf4aaa5745a6053,t3_2xe764,,,3.0,,,1.0,,,4.0,,,,go over their video game plan.,"Things happen!  There is a clear series of events.
+It reads like shakespeare or an ancient greek revenge play.
+It has clear characters.
+There is action and reaction.",,1q 1a *2d,1c 1a 1d 1j 1m 1b,
+60fd694d2bf4aaa5745a6053,t3_16c6pn,,4.0,,,,1.0,,,,,,5.0,talk about how they mistook the root beer they were drinking for diet.,"It has a clear beginning
+The time frame.
+There is a central problem and a ""solution"" (pain).
+The sentences connect to one another chronologically and logically.",,1a *2d 1b,1j 1d 1c 1t,
+60fd694d2bf4aaa5745a6053,cirf0m3,,,,1.0,,,2.0,,,,1.0,,convey their anger over an interaction.,"I don't understand most of this text.
+It is convoluted.
+It does not explain itself.
+",rant,1a 1s 1d 1n 1b,!*2c !1j,2e
+60fd694d2bf4aaa5745a6053,c2f06iz,,,3.0,,,1.0,,,,,,5.0,explain their experience witnessing and responding to a crime.,"It has a beginning, middle, and end.
+It has characters.
+There is a central incident/problem eg. the attack.
+It flows chronologically.
+It's also simply palpable as a story in the way most others aren't.",,1a 1d *2c 1n 1b,1c 1a 1d 1j 2a !1i 1m 1b,
+60fd694d2bf4aaa5745a6053,c2o9ms5,,,,1.0,,1.0,,,,3.0,,,Discuss their struggles with getting a cholecystectomy.,"Has a prompt of sorts.
+Follows a clear theme (of their medical issue).
+Has a clear middle and sort of end to their medical journey.
+Has the idea of characters (eg. whoever made the suggestion).",,1a 1d 2f 1n 1b,1j 1d 1a 1c,
+64135edc2e7ef43ffe9330fe,cfl8x0q,,,3.0,,,1.0,,,,,,5.0,educate people on bodybuilding.,"The author tells us how he began bodybuilding.
+
+Then he tells a story about working out with his friend who is shorter, and how that made it easier for his friend than for himself.",,*2c 1p,2c *2a 1p 1a 1n 1b,
+64135edc2e7ef43ffe9330fe,t3_icafx,,,,1.0,,,2.0,,4.0,,,,ask for advice on his career path,The author is really just asking for advice on their career path.,This is not a story it is a question.,*2b 2e 1n,*2b 2e 1n,2b !2a
+64135edc2e7ef43ffe9330fe,t3_3siaph,,,,1.0,,1.0,,,4.0,,,,The author of this text wants to make people happy.,"The author tells us of one of his favorite songs.
+
+They then tell us they watch a show based on the song title.
+
+Then they tell us how it made then smile.",,1i 1s,*2d 1a 1r 1s 1o 2f 1n 1b,
+64135edc2e7ef43ffe9330fe,t3_3sszy3,,,3.0,,,1.0,,,,3.0,,,to ask for advice about an unsatisfactory car he bought,The author tells us about his purchase of the car and the problems with it. He says the dealership won't fix it or honor the warranty.,,*2b 1d 2e 1o 1b,*2d 1a 1r 1d 2f 1b,
+64135edc2e7ef43ffe9330fe,t3_2oud1f,,,,1.0,,1.0,,,4.0,,,,complain about a video game design,The author tells us about playing a video game. He really doesn't like the changes in the new game as they don't give the player certain advantages.,,1q 1o *2e 2f,*2d 1a 1r 1o 2f,

@@ -1,0 +1,27 @@
+\begin{table}
+\caption{The most relatively prevalent code when annotator types disagree (vs. agree). We include all pairs with at least one human annotator type for which there are at least 10 disagreements.}
+\label{tab:cross-annotator-dis}
+\begin{tabular}{lllr}
+\toprule
+Story & Not Story & Code & Prob \\
+\midrule
+expert & crowd\_maj & NOT\_plot\_sequence & -0.22 \\
+expert & GPT-4 & behavior\_strategy & -0.18 \\
+expert & GPT-4t & behavior\_strategy & -0.11 \\
+expert & GPT-4o & behavior\_strategy & -0.12 \\
+GPT-4 & crowd\_maj & NOT\_plot\_sequence & -0.26 \\
+crowd\_maj & GPT-4t & behavior\_strategy & -0.10 \\
+crowd\_maj & GPT-4o & behavior\_strategy & -0.12 \\
+Llama3 & expert & NOT\_plot\_sequence & -0.15 \\
+Llama3 & crowd\_maj & NOT\_plot\_sequence & -0.27 \\
+crowd\_maj & expert & character\_person & -0.44 \\
+GPT-4 & expert & character\_person & -0.21 \\
+GPT-4t & expert & character\_person & -0.35 \\
+crowd\_maj & GPT-4 & character\_person & -0.43 \\
+GPT-4t & crowd\_maj & event\_experience & -0.30 \\
+GPT-4o & crowd\_maj & event\_experience & -0.32 \\
+expert & Llama3 & event\_experience & -0.21 \\
+crowd\_maj & Llama3 & character\_person & -0.48 \\
+\bottomrule
+\end{tabular}
+\end{table}

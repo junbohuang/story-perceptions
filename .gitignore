@@ -1,0 +1,7 @@
+data/tldr_ss_subset.csv
+data/ss.csv
+data/sse.csv
+data/sp.csv
+src/passwords.py
+.venv/
+.pyc
