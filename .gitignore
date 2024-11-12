@@ -4,4 +4,4 @@ data/sse.csv
 data/sp.csv
 src/passwords.py
 .venv/
-.pyc
+*.pyc
