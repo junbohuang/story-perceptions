@@ -1,6 +1,6 @@
-DATA_DIR = '../data'
-RESULTS_DIR = '../results'
-OUT_DIR = '../out'
+DATA_DIR = './data'
+RESULTS_DIR = './results'
+OUT_DIR = './out'
 
 POTATO_CODED_RAW_UNFILTERED_ANNOTATOR1_PATH = f'{DATA_DIR}/pcru_ann1.csv'
 POTATO_CODED_RAW_UNFILTERED_ANNOTATOR2_PATH = f'{DATA_DIR}/pcru_ann2.csv'
