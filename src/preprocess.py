@@ -13,7 +13,7 @@ import requests
 from tqdm import tqdm
 import json
 import llama_utils
-import gpt_utils
+#import gpt_utils
 from llm_prompt_templates import *
 import survey_utils
 from collections import defaultdict
@@ -82,16 +82,16 @@ pcr_df = pd.read_csv(POTATO_CODED_RAW_FILTERED_PATH, converters=pandas_utils.get
 print('pcr_df count:', len(pcr_df.index))
 sse_df = ss_df.copy()
 
-'''for model_abrev, model in [('llama3', ''),
-                           ('gpt4o', 'gpt-4o-2024-05-13'),
-                           ('gpt4t', 'gpt-4-turbo-2024-04-09'),
-                           ('gpt4', 'gpt-4-0613')]:
+for model_abrev, model in [('llama3', '')]:
+                           #('gpt4o', 'gpt-4o-2024-05-13'),
+                           #('gpt4t', 'gpt-4-turbo-2024-04-09'),
+                           #('gpt4', 'gpt-4-0613')]:
     for prompt_idx, prompt_template in enumerate([TEXT_TO_DECISION_AND_RATIONALE_0,
                                                   TEXT_TO_DECISION_AND_RATIONALE_1,
                                                   TEXT_TO_DECISION_AND_RATIONALE_2,
                                                   TEXT_TO_DECISION_AND_RATIONALE_3,
                                                   TEXT_TO_DECISION_AND_RATIONALE_4]):
-        if 'gpt' in model_abrev and (
+        '''if 'gpt' in model_abrev and (
                 f'{model_abrev}_descriptive_label_{prompt_idx}' not in sse_df.columns or FORCE_RERUN_GPT):
             output_path = f'{GPT_RESULTS_DIR}/{model_abrev}/text_to_decision_and_rationale_{prompt_idx}.csv'
             sse_df = gpt_utils.process(df=sse_df,
@@ -102,9 +102,9 @@ sse_df = ss_df.copy()
                                        force_rerun=FORCE_RERUN_GPT,
                                        model=model,
                                        model_abrev=model_abrev)
-            sse_df.to_csv(SS_EXTENDED_PATH, index=False)
+            sse_df.to_csv(SS_EXTENDED_PATH, index=False)'''
 
-        elif 'llama3' in model_abrev and (
+        if 'llama3' in model_abrev and (
                 f'{model_abrev}_descriptive_label_{prompt_idx}' not in sse_df.columns or FORCE_RERUN_LLAMA3):
             output_path = f'{LLAMA3_RESULTS_DIR}/text_to_decision_and_rationale_{prompt_idx}.csv'
             sse_df = llama_utils.process(df=sse_df,
@@ -182,4 +182,4 @@ pc_df['crowd_label_mv'] = pc_df['instance_id'].apply(lambda instance_id: sp_df.l
 pc_df['crowd_label_mv_rate'] = pc_df['instance_id'].apply(lambda instance_id: sp_df.loc[sp_df['id'] == instance_id, 'crowd_label_mv_rate'].iloc[0])
 pc_df['crowd_labels_entropy'] = pc_df['instance_id'].apply(lambda instance_id: sp_df.loc[sp_df['id'] == instance_id, 'crowd_labels_entropy'].iloc[0])
 pc_df['crowd_confidence_entropy'] = pc_df['instance_id'].apply(lambda instance_id: sp_df.loc[sp_df['id'] == instance_id, 'crowd_confidence_entropy'].iloc[0])
-pc_df.to_csv(POTATO_CODED_PATH)'''
+pc_df.to_csv(POTATO_CODED_PATH)
