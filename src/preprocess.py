@@ -82,7 +82,7 @@ pcr_df = pd.read_csv(POTATO_CODED_RAW_FILTERED_PATH, converters=pandas_utils.get
 print('pcr_df count:', len(pcr_df.index))
 sse_df = ss_df.copy()
 
-for model_abrev, model in [('llama3', ''),
+'''for model_abrev, model in [('llama3', ''),
                            ('gpt4o', 'gpt-4o-2024-05-13'),
                            ('gpt4t', 'gpt-4-turbo-2024-04-09'),
                            ('gpt4', 'gpt-4-0613')]:
@@ -182,4 +182,4 @@ pc_df['crowd_label_mv'] = pc_df['instance_id'].apply(lambda instance_id: sp_df.l
 pc_df['crowd_label_mv_rate'] = pc_df['instance_id'].apply(lambda instance_id: sp_df.loc[sp_df['id'] == instance_id, 'crowd_label_mv_rate'].iloc[0])
 pc_df['crowd_labels_entropy'] = pc_df['instance_id'].apply(lambda instance_id: sp_df.loc[sp_df['id'] == instance_id, 'crowd_labels_entropy'].iloc[0])
 pc_df['crowd_confidence_entropy'] = pc_df['instance_id'].apply(lambda instance_id: sp_df.loc[sp_df['id'] == instance_id, 'crowd_confidence_entropy'].iloc[0])
-pc_df.to_csv(POTATO_CODED_PATH)
+pc_df.to_csv(POTATO_CODED_PATH)'''
