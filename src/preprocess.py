@@ -132,9 +132,9 @@ pc_df['confidence'] = pc_df.apply(lambda row: survey_utils.get_confidence_score(
 pc_df['familiarity'] = pc_df.apply(lambda row: survey_utils.get_familiarity_score(row), axis=1)
 pc_df['label'] = pc_df.apply(lambda row: survey_utils.get_label(row), axis=1)
 pc_df['gc_label'] = pc_df['instance_id'].apply(lambda instance_id: sse_df.loc[sse_df['id'] == instance_id, 'gold_consensus'].iloc[0])
-pc_df['gpt4_descriptive_label_mv'] = pc_df['instance_id'].apply(lambda instance_id: sse_df.loc[sse_df['id'] == instance_id, 'gpt4_descriptive_label_mv'].iloc[0])
-pc_df['gpt4t_descriptive_label_mv'] = pc_df['instance_id'].apply(lambda instance_id: sse_df.loc[sse_df['id'] == instance_id, 'gpt4t_descriptive_label_mv'].iloc[0])
-pc_df['gpt4o_descriptive_label_mv'] = pc_df['instance_id'].apply(lambda instance_id: sse_df.loc[sse_df['id'] == instance_id, 'gpt4o_descriptive_label_mv'].iloc[0])
+#pc_df['gpt4_descriptive_label_mv'] = pc_df['instance_id'].apply(lambda instance_id: sse_df.loc[sse_df['id'] == instance_id, 'gpt4_descriptive_label_mv'].iloc[0])
+#pc_df['gpt4t_descriptive_label_mv'] = pc_df['instance_id'].apply(lambda instance_id: sse_df.loc[sse_df['id'] == instance_id, 'gpt4t_descriptive_label_mv'].iloc[0])
+#pc_df['gpt4o_descriptive_label_mv'] = pc_df['instance_id'].apply(lambda instance_id: sse_df.loc[sse_df['id'] == instance_id, 'gpt4o_descriptive_label_mv'].iloc[0])
 pc_df['llama3_descriptive_label_mv'] = pc_df['instance_id'].apply(lambda instance_id: sse_df.loc[sse_df['id'] == instance_id, 'llama3_descriptive_label_mv'].iloc[0])
 
 pc_df['goal'] = pc_df['goal:::text_box']
@@ -144,7 +144,7 @@ pc_df['rationale_codes'] = pc_df['story_decision_explanation_codes'].apply(surve
 pc_df['alternative'] = pc_df['story_alternative:::text_box']
 pc_df['alternative_codes'] = pc_df['story_alternative_codes'].apply(survey_utils.get_code_list)
 pc_df['is_coded'] = pc_df.apply(lambda row: survey_utils.instance_coded(row), axis=1)
-pc_df = pc_df[['user', 'instance_id', 'confidence', 'familiarity', 'label', 'gc_label', 'gpt4_descriptive_label_mv', 'gpt4t_descriptive_label_mv', 'gpt4o_descriptive_label_mv', 'llama3_descriptive_label_mv', 'goal', 'goal_codes', 'rationale', 'rationale_codes', 'alternative', 'alternative_codes', 'is_coded']]
+pc_df = pc_df[['user', 'instance_id', 'confidence', 'familiarity', 'label', 'gc_label', 'llama3_descriptive_label_mv', 'goal', 'goal_codes', 'rationale', 'rationale_codes', 'alternative', 'alternative_codes', 'is_coded']]
 
 pc_df = pc_df[pc_df['is_coded'] == True]
 pc_df.to_csv(POTATO_CODED_PATH, index=False)
