@@ -16,7 +16,7 @@ val_df = pd.DataFrame(storyseeker_dataset['val'])
 test_df = pd.DataFrame(storyseeker_dataset['test'])
 
 ids = train_df['id'].tolist() + val_df['id'].tolist() + test_df['id'].tolist()
-reddit_df = pd.read_csv("../data/sp.csv")
+reddit_df = pd.read_csv("./data/sp.csv")
 id_text_dict = pd.Series(reddit_df.text.values,index=reddit_df.ids).to_dict()
 
 train_df['text'] = train_df['id'].apply(lambda x: id_text_dict[x])
