@@ -1,0 +1,10 @@
+importlib-metadata==8.0.0
+importlib-resources==6.4.0
+jaraco.collections==5.1.0
+krippendorff==0.8.0
+llm2vec==0.2.2
+openai==1.54.3
+pip-chill==1.0.3
+platformdirs==4.2.2
+seaborn==0.13.2
+tomli==2.0.1
