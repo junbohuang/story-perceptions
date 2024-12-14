@@ -8,7 +8,7 @@ from peft import PeftModel
 from datasets import load_dataset
 from sklearn.metrics import accuracy_score, f1_score
 
-if __name__ == '__main__':    
+if __name__ == '__main__':
     storyseeker_dataset = load_dataset("mariaantoniak/storyseeker")
 
     train_df = pd.DataFrame(storyseeker_dataset['train'])
@@ -56,10 +56,10 @@ if __name__ == '__main__':
     )
 
     # Wrapper for encoding and pooling operations
-    l2v = LLM2Vec(model, tokenizer, pooling_mode="mean", max_length=512)
+    l2v = LLM2Vec(model, tokenizer, pooling_mode="mean", max_length=2048)
 
     # train
-    max_iter = 100
+    max_iter = 1000
     batch_size = 8
     scores = {}
 
